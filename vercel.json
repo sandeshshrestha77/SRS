@@ -1,20 +1,19 @@
 {
     "version": 2,
     "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/next"
-      }
+        {
+            "src": "package.json",
+            "use": "@vercel/next"
+        }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/$1"
-      }
+        {
+            "src": "/(.*)",
+            "dest": "/$1"
+        }
     ],
     "functions": {
-      "nodeVersion": "18.x"
+        "nodeVersion": "18.x"
     },
-    "cleanUrls": true,
-    "public": "public"
-  }
+    "cleanUrls": true
+}
