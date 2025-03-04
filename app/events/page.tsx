@@ -12,43 +12,43 @@ export const metadata = {
 export default function EventsPage() {
   const events = [
     {
-      year: "2024",
-      title: "Rising Star 2024",
+      year: "2025",
+      title: "Rising Star Season 4",
       status: "Upcoming",
       description: "The biggest talent hunt competition yet, featuring international judges and live streaming.",
-      link: "/events/rising-star-2024",
-      image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=2070",
-      date: "June 30, 2024",
+      link: "/events/rising-star-s4",
+      image: "/images/s/4.jpg",
+      date: "June 30, 2025",
       highlights: ["International Judges", "Live Streaming", "₹10L Prize Pool"]
     },
     {
-      year: "2023",
-      title: "Rising Star 2023",
+      year: "2021",
+      title: "Rising Star Season 3",
       status: "Completed",
-      description: "A spectacular showcase of Sikkim's finest talents with nationwide recognition.",
-      link: "/events/rising-star-2023",
-      image: "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&q=80&w=2070",
-      date: "June 25, 2023",
+description: "Our third season saw Dream Band from Gangtok, Sikkim, emerge as the winner. This talented singing band delivered outstanding performances, showcasing their musical prowess and charisma on stage.",
+      link: "/events/rising-star-s3",
+      image: "/images/s/3.jpg",
+      date: "June 25, 2021",
       highlights: ["500+ Participants", "National Coverage", "Celebrity Performances"]
     },
     {
-      year: "2022",
-      title: "Rising Star 2022",
+      year: "2019",
+      title: "Rising Star Season 2",
       status: "Completed",
-      description: "Featured groundbreaking performances and launched several successful careers.",
-      link: "/events/rising-star-2022",
-      image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=2070",
-      date: "June 20, 2022",
+description: "In our second season, Dynamic Flickers Dance Studio from Ranipool, Sikkim, took home the top prize. This talented dance group showcased their impressive moves and energetic performances, winning over the hearts of our audience.",
+      link: "/events/rising-star-s2",
+      image: "/images/s/2.jpg",
+      date: "June 20, 2019",
       highlights: ["300+ Participants", "Regional Finals", "Media Coverage"]
     },
     {
-      year: "2021",
-      title: "Rising Star 2021",
+      year: "2018",
+      title: "Rising Star Season 1",
       status: "Completed",
-      description: "The first-ever digital edition with participants from across the region.",
-      link: "/events/rising-star-2021",
-      image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=2070",
-      date: "June 15, 2021",
+description: "Our inaugural season crowned Ocean Rai from Singtam, Sikkim, as the winner. Ocean, a talented solo singer from a singing background, impressed our judges and audience with his soulful voice.",
+      link: "/events/rising-star-s1",
+      image: "/images/s/1.jpg",
+      date: "Sep 2018",
       highlights: ["Digital Format", "200+ Participants", "Online Voting"]
     }
   ];

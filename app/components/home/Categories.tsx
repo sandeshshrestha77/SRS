@@ -1,4 +1,3 @@
-
 import { MicrophoneIcon, MusicalNoteIcon } from '@heroicons/react/24/outline';
 import { SparklesIcon } from '@heroicons/react/24/solid';
 import Section from '../ui/Section';
@@ -19,11 +18,32 @@ const categories = [
     gradient: 'from-amber-400 via-amber-500 to-amber-600'
   },
   {
-    title: 'Music',
+    title: 'Rap',
+    description: 'Deliver powerful lyrics and rhythms with style',
+    icon: MicrophoneIcon,
+    features: ['Freestyle', 'Original Composition', 'Battle Rap'],
+    gradient: 'from-amber-600 via-amber-700 to-amber-800'
+  },
+  {
+    title: 'Beatbox',
+    description: 'Create beats and rhythms using only your voice',
+    icon: MicrophoneIcon,
+    features: ['Solo Beatboxing', 'Loop Station', 'Collaboration'],
+    gradient: 'from-amber-500 via-amber-600 to-amber-700'
+  },
+  {
+    title: 'Musical Instrument',
     description: 'Demonstrate your instrumental prowess',
     icon: MusicalNoteIcon,
     features: ['Solo Instrumental', 'Band Performance', 'Fusion'],
     gradient: 'from-amber-600 via-amber-700 to-amber-800'
+  },
+  {
+    title: 'Open Talent',
+    description: 'Showcase any unique skill or performance art',
+    icon: SparklesIcon,
+    features: ['Comedy', 'Magic', 'Variety Acts'],
+    gradient: 'from-amber-400 via-amber-500 to-amber-600'
   }
 ];
 
@@ -34,10 +54,13 @@ export default function Categories() {
         {categories.map((category) => {
           const Icon = category.icon;
           return (
-            <div key={category.title} 
+            <div
+              key={category.title}
               className="group relative overflow-hidden rounded-2xl"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-10 group-hover:opacity-20 transition-opacity duration-500`} />
+              <div
+                className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-10 group-hover:opacity-20 transition-opacity duration-500`}
+              />
               
               <div className="relative p-8 bg-gradient-to-br from-black/80 to-amber-950/80 border border-amber-500/20 hover:border-amber-500/40 transition-all duration-500 h-full transform group-hover:scale-[1.02]">
                 <div className="flex items-start justify-between mb-6">
@@ -55,7 +78,10 @@ export default function Categories() {
                 
                 <ul className="space-y-3">
                   {category.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-3 text-gray-400 group-hover:text-gray-300 transition-colors">
+                    <li
+                      key={feature}
+                      className="flex items-center gap-3 text-gray-400 group-hover:text-gray-300 transition-colors"
+                    >
                       <div className="w-1.5 h-1.5 rounded-full bg-amber-400" />
                       <span>{feature}</span>
                     </li>

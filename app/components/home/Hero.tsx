@@ -2,7 +2,10 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 export default function Hero() {
   return (
-    <div className="relative min-h-[80vh] flex items-center justify-center mb-32">
+    <div 
+  className="relative min-h-[80vh] flex items-center justify-center mb-32 bg-cover bg-center"
+  style={{ backgroundImage: "url('/images/hero.jpg')" }}
+>
       {/* Overlay Gradient for Contrast */}
       <div className="absolute inset-0 bg-black/40" />
 
@@ -16,7 +19,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-gray-300 text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed">
-            Join Sikkim&apos;s biggest talent showcase and shine like never before.
+            Join Sikkim biggest talent showcase and shine like never before.
             <br />
             <span className="text-amber-300 font-semibold">Your moment starts here!</span>
           </p>

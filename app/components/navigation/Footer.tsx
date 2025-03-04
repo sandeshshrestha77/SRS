@@ -22,10 +22,9 @@ const navigation = {
 };
 
 const socialLinks = [
-  { name: "Instagram", href: "#", ariaLabel: "Visit Instagram" },
-  { name: "Facebook", href: "#", ariaLabel: "Visit Facebook" },
-  { name: "YouTube", href: "#", ariaLabel: "Visit YouTube" },
-  { name: "Twitter", href: "#", ariaLabel: "Visit Twitter" },
+  { name: "Instagram", href: "https://www.instagram.com/sikkimrisingstar_official_/", ariaLabel: "Visit Instagram" },
+  { name: "Facebook", href: "https://www.facebook.com/sikkimrisingstar/", ariaLabel: "Visit Facebook" },
+  { name: "YouTube", href: "https://youtube.com/@sikkimrisingstar", ariaLabel: "Visit YouTube" },
 ];
 
 export default function Footer() {
@@ -46,21 +45,23 @@ export default function Footer() {
 </p>
             <div className="space-y-2">
               <a
-                href="mailto:contact@sikkimrisingstar.com"
+                href="sikkimrisingstar@gmail.com"
                 className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
                 aria-label="Email Sikkim Rising Star"
               >
                 <EnvelopeIcon className="w-4 h-4" />
-                contact@sikkimrisingstar.com
+                sikkimrisingstar@gmail.com
               </a>
-              <a
-                href="tel:+919876543210"
+                <a
+                href="https://wa.me/919734013211"
                 className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
-                aria-label="Call Sikkim Rising Star"
-              >
-                <PhoneIcon className="w-4 h-4" />
-                +91 98765 43210
-              </a>
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Sikkim Rising Star"
+                >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"></svg>
+                +91 97340 13211
+                </a>
             </div>
           </div>
 

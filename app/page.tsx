@@ -6,7 +6,6 @@ import HowItWorks from "./components/home/HowItWorks";
 import Prizes from "./components/home/Prizes";
 import Sponsors from "./components/home/Sponsors";
 import FAQ from "./components/home/FAQ";
-import Contact from "./components/home/Contact";
 import CTA from "./components/home/CTA";
 
 const Home = () => {
@@ -21,7 +20,6 @@ const Home = () => {
         <CTA />
         <Sponsors />
         <FAQ />
-        <Contact />
       </div>
     </main>
   );

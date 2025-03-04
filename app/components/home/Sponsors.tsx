@@ -1,10 +1,10 @@
 "use client";
 import { useEffect, useRef } from "react";
 import Section from "../ui/Section";
-import Image from "next/image"; // Import Image from Next.js
+import Image from "next/image";
 
 const sponsors = [
-  { name: "Company 1", url: "/images/logo.png" }, // Use local images for better reliability
+  { name: "Company 1", url: "/images/logo.png" },
   { name: "Company 2", url: "/images/logo.png" },
   { name: "Company 3", url: "/images/logo.png" },
   { name: "Company 4", url: "/images/logo.png" },
@@ -19,28 +19,29 @@ export default function Sponsors() {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer) return;
 
-    const scrollWidth = scrollContainer.scrollWidth;
-    const clientWidth = scrollContainer.clientWidth;
-    let scrollPos = 0;
-    let direction = 1;
-    const speed = 1; // Adjust speed as needed
-
+    let animationFrameId: number;
+    const speed = 1; // Pixels per frame
+    
     const animate = () => {
       if (!scrollContainer) return;
-      scrollPos += speed * direction;
-      scrollContainer.scrollLeft = scrollPos;
 
-      // Reverse direction when reaching the edges
-      if (scrollPos >= scrollWidth - clientWidth) {
-        direction = -1;
-      } else if (scrollPos <= 0) {
-        direction = 1;
+      scrollContainer.scrollLeft += speed;
+
+      // Reset when we've scrolled one set of sponsors
+      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
+        scrollContainer.scrollLeft = 0;
       }
-      requestAnimationFrame(animate);
+
+      animationFrameId = requestAnimationFrame(animate);
     };
 
-    const animationFrame = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(animationFrame);
+    animationFrameId = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
   }, []);
 
   return (
@@ -50,13 +51,13 @@ export default function Sponsors() {
       aria-labelledby="sponsors-section"
     >
       <div className="relative overflow-hidden">
-        {/* Scrollable container */}
         <div
           ref={scrollRef}
-          className="flex gap-8 overflow-x-hidden py-8 px-4 scroll-smooth"
+          className="flex gap-8 overflow-x-hidden py-8 px-4 whitespace-nowrap"
           role="list"
           aria-label="Sponsor logos"
         >
+          {/* Duplicate the sponsors array twice to ensure smooth infinite scroll */}
           {[...sponsors, ...sponsors].map((sponsor, index) => (
             <div
               key={`${sponsor.name}-${index}`}
@@ -67,11 +68,11 @@ export default function Sponsors() {
                 src={sponsor.url}
                 alt={`Logo of ${sponsor.name}`}
                 className="max-w-full max-h-full opacity-75 group-hover:opacity-100 transition-opacity"
-                width={200} // Specify width and height for the Image component
+                width={200}
                 height={80}
-                loading="lazy" // Lazy load images for performance
+                loading="lazy"
                 onError={(e) => {
-                  e.currentTarget.src = "/images/default-logo.png"; // Fallback image
+                  e.currentTarget.src = "/images/default-logo.png";
                 }}
               />
             </div>

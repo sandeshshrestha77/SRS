@@ -5,18 +5,18 @@ import Card from '../ui/Card';
 const prizes = [
   {
     title: "First Prize",
-    amount: "₹5,00,000",
+    amount: "₹1,00,000",
     benefits: [
-      "Professional recording contract",
-      "1-year mentorship program",
-      "National media exposure",
-      "Performance opportunities"
+      "Trophy & certificate",
+      "Media exposure",
+      "Performance opportunities",
+      "1 year mentorship program"
     ],
     icon: TrophyIcon
   },
   {
     title: "Second Prize",
-    amount: "₹3,00,000",
+    amount: "₹40,000",
     benefits: [
       "Studio recording session",
       "6-month mentorship program",
@@ -27,12 +27,12 @@ const prizes = [
   },
   {
     title: "Third Prize",
-    amount: "₹2,00,000",
+    amount: "₹20,000",
     benefits: [
-      "Portfolio photoshoot",
+      "Certificate of achievement",
       "3-month training program",
       "Local media coverage",
-      "Performance platform"
+      "Future Performance platform"
     ],
     icon: StarIcon
   }

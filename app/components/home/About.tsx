@@ -31,15 +31,23 @@ export default function About() {
             </li>
             <li className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-              <span>30+ successful professional artists launched</span>
+              <span>Talent Platform - A stage for aspiring artists</span>
             </li>
             <li className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-              <span>Partnerships with national media houses</span>
+              <span>Empowering Artists – Helping talents grow</span>
             </li>
             <li className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-              <span>Annual viewership of 100,000+</span>
+              <span>Opportunities – Cash prizes, media exposure, and career boosts</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <div className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+              <span>Community Engagement – Connecting artists, sponsors, and audiences</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <div className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+              <span>Continuous Growth – Expanding reach every season</span>
             </li>
           </ul>
         </Card>
