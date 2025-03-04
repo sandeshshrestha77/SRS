@@ -55,22 +55,6 @@
       "static/chunks/main-app-a4546a22e23eb66c.js",
       "static/chunks/app/events/loading-97012cc4c25c21ef.js"
     ],
-    "/events/rising-star-s1/page": [
-      "static/chunks/webpack-c994fa5a3ae07c47.js",
-      "static/chunks/fd9d1056-01c0efb178ae4adf.js",
-      "static/chunks/864-72f91ca20beb1d45.js",
-      "static/chunks/main-app-a4546a22e23eb66c.js",
-      "static/chunks/964-43865e6876fbafb3.js",
-      "static/chunks/app/events/rising-star-s1/page-ed671ec1737455d1.js"
-    ],
-    "/events/rising-star-s4/page": [
-      "static/chunks/webpack-c994fa5a3ae07c47.js",
-      "static/chunks/fd9d1056-01c0efb178ae4adf.js",
-      "static/chunks/864-72f91ca20beb1d45.js",
-      "static/chunks/main-app-a4546a22e23eb66c.js",
-      "static/chunks/964-43865e6876fbafb3.js",
-      "static/chunks/app/events/rising-star-s4/page-a68e88634e95e440.js"
-    ],
     "/events/rising-star-s2/page": [
       "static/chunks/webpack-c994fa5a3ae07c47.js",
       "static/chunks/fd9d1056-01c0efb178ae4adf.js",
@@ -79,13 +63,29 @@
       "static/chunks/964-43865e6876fbafb3.js",
       "static/chunks/app/events/rising-star-s2/page-ad63bc9c88207184.js"
     ],
+    "/events/rising-star-s1/page": [
+      "static/chunks/webpack-c994fa5a3ae07c47.js",
+      "static/chunks/fd9d1056-01c0efb178ae4adf.js",
+      "static/chunks/864-72f91ca20beb1d45.js",
+      "static/chunks/main-app-a4546a22e23eb66c.js",
+      "static/chunks/964-43865e6876fbafb3.js",
+      "static/chunks/app/events/rising-star-s1/page-112b3f533cbb12a0.js"
+    ],
+    "/events/rising-star-s4/page": [
+      "static/chunks/webpack-c994fa5a3ae07c47.js",
+      "static/chunks/fd9d1056-01c0efb178ae4adf.js",
+      "static/chunks/864-72f91ca20beb1d45.js",
+      "static/chunks/main-app-a4546a22e23eb66c.js",
+      "static/chunks/964-43865e6876fbafb3.js",
+      "static/chunks/app/events/rising-star-s4/page-6879fc2b8adff496.js"
+    ],
     "/events/rising-star-s3/page": [
       "static/chunks/webpack-c994fa5a3ae07c47.js",
       "static/chunks/fd9d1056-01c0efb178ae4adf.js",
       "static/chunks/864-72f91ca20beb1d45.js",
       "static/chunks/main-app-a4546a22e23eb66c.js",
       "static/chunks/964-43865e6876fbafb3.js",
-      "static/chunks/app/events/rising-star-s3/page-f3ef7a5a4f10576e.js"
+      "static/chunks/app/events/rising-star-s3/page-6389b4d0c17de80e.js"
     ]
   }
 }
