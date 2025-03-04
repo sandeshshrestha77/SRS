@@ -46,7 +46,7 @@ description:
     "Collaboration with national media"
   ],
   gallery: [
-    { url: "/public/images/s1/1.jpg" },
+    { url: "/images/s1/1.jpg" },
     { url: "/images/s1/2.jpg" },
     { url: "/images/s1/3.jpg" },
     { url: "/images/s1/4.jpg" },
