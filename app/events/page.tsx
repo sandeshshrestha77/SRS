@@ -1,4 +1,3 @@
-
 import Section from '../components/ui/Section';
 import Card from '../components/ui/Card';
 import Link from 'next/link';
@@ -25,7 +24,7 @@ export default function EventsPage() {
       year: "2021",
       title: "Rising Star Season 3",
       status: "Completed",
-description: "Our third season saw Dream Band from Gangtok, Sikkim, emerge as the winner. This talented singing band delivered outstanding performances, showcasing their musical prowess and charisma on stage.",
+      description: "Our third season saw Dream Band from Gangtok, Sikkim, emerge as the winner. This talented singing band delivered outstanding performances, showcasing their musical prowess and charisma on stage.",
       link: "/events/rising-star-s3",
       image: "/images/s/3.jpg",
       date: "June 25, 2021",
@@ -35,7 +34,7 @@ description: "Our third season saw Dream Band from Gangtok, Sikkim, emerge as th
       year: "2019",
       title: "Rising Star Season 2",
       status: "Completed",
-description: "In our second season, Dynamic Flickers Dance Studio from Ranipool, Sikkim, took home the top prize. This talented dance group showcased their impressive moves and energetic performances, winning over the hearts of our audience.",
+      description: "In our second season, Dynamic Flickers Dance Studio from Ranipool, Sikkim, took home the top prize. This talented dance group showcased their impressive moves and energetic performances, winning over the hearts of our audience.",
       link: "/events/rising-star-s2",
       image: "/images/s/2.jpg",
       date: "June 20, 2019",
@@ -45,7 +44,7 @@ description: "In our second season, Dynamic Flickers Dance Studio from Ranipool,
       year: "2018",
       title: "Rising Star Season 1",
       status: "Completed",
-description: "Our inaugural season crowned Ocean Rai from Singtam, Sikkim, as the winner. Ocean, a talented solo singer from a singing background, impressed our judges and audience with his soulful voice.",
+      description: "Our inaugural season crowned Ocean Rai from Singtam, Sikkim, as the winner. Ocean, a talented solo singer from a singing background, impressed our judges and audience with his soulful voice.",
       link: "/events/rising-star-s1",
       image: "/images/s/1.jpg",
       date: "Sep 2018",
@@ -57,41 +56,41 @@ description: "Our inaugural season crowned Ocean Rai from Singtam, Sikkim, as th
   const pastEvents = events.filter(event => event.status === "Completed");
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen px-4 sm:px-6 lg:px-8">
       {/* Upcoming Events Section */}
-      <Section title="Upcoming Events" className="pt-32 pb-16">
-        <div className="grid grid-cols-1 gap-8">
+      <Section title="Upcoming Events" className="pt-24 pb-16">
+        <div className="space-y-16">
           {upcomingEvents.map((event) => (
             <Link href={event.link} key={event.year}>
-              <Card className="group hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-amber-950/80 via-black to-black border-amber-500/30 hover:shadow-xl hover:shadow-amber-500/20 scale-[1.02]">
-                <div className="flex flex-col md:flex-row gap-6">
-                  <div className="relative w-full md:w-2/5 h-[300px] rounded-lg overflow-hidden">
+              <Card className="group bg-black border border-amber-500/20 hover:border-amber-500/50 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10">
+                <div className="flex flex-col sm:flex-row">
+                  <div className="relative w-full sm:w-1/3 h-64 sm:h-auto">
                     <Image
                       src={event.image}
                       alt={event.title}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      sizes="(max-width: 768px) 100vw, 40vw"
+                      className="object-contain sm:object-cover transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, 33vw"
                     />
                   </div>
-                  <div className="flex-1 p-4">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-3xl font-bold text-white group-hover:text-amber-400 transition-colors">
+                  <div className="flex-1 p-6 sm:p-8 space-y-6">
+                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                      <h3 className="text-2xl sm:text-3xl font-semibold text-white group-hover:text-amber-400 transition-colors">
                         {event.title}
                       </h3>
-                      <span className="px-4 py-2 rounded-full text-sm bg-gradient-to-r from-amber-500 to-amber-600 text-black font-semibold animate-pulse">
+                      <span className="px-4 py-1.5 bg-amber-500 text-black text-sm sm:text-base font-medium rounded-full animate-pulse">
                         {event.status}
                       </span>
                     </div>
-                    <p className="text-gray-300 mb-6">{event.description}</p>
+                    <p className="text-gray-300 text-base sm:text-lg leading-relaxed">{event.description}</p>
                     <div className="space-y-4">
-                      <div className="flex items-center gap-2 text-gray-400">
+                      <div className="flex items-center gap-3 text-gray-300 text-base sm:text-lg">
                         <span className="text-amber-400">📅</span>
                         {event.date}
                       </div>
                       <div className="flex flex-wrap gap-3">
                         {event.highlights.map((highlight, index) => (
-                          <span key={index} className="px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 text-sm">
+                          <span key={index} className="px-3 py-1.5 bg-amber-500/10 text-amber-300 text-sm sm:text-base rounded-md">
                             {highlight}
                           </span>
                         ))}
@@ -106,39 +105,39 @@ description: "Our inaugural season crowned Ocean Rai from Singtam, Sikkim, as th
       </Section>
 
       {/* Past Events Section */}
-      <Section title="Past Events" className="pb-32">
-        <div className="grid grid-cols-1 gap-8">
+      <Section title="Past Events" className="pb-24">
+        <div className="space-y-20">
           {pastEvents.map((event) => (
             <Link href={event.link} key={event.year}>
-              <Card className="group hover:border-amber-500/30 transition-colors duration-300">
-                <div className="flex flex-col md:flex-row gap-6">
-                  <div className="relative w-full md:w-2/5 h-[300px] rounded-lg overflow-hidden">
+              <Card className="group bg-black border border-amber-500/20 hover:border-amber-500/50 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10">
+                <div className="flex flex-col">
+                  <div className="relative w-full h-64">
                     <Image
                       src={event.image}
                       alt={event.title}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500 grayscale hover:grayscale-0"
-                      sizes="(max-width: 768px) 100vw, 40vw"
+                      className="object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                      sizes="100vw"
                     />
                   </div>
-                  <div className="flex-1 p-4">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-3xl font-bold text-white group-hover:text-amber-400 transition-colors">
+                  <div className="p-6 sm:p-8 space-y-6">
+                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                      <h3 className="text-2xl sm:text-3xl font-semibold text-white group-hover:text-amber-400 transition-colors">
                         {event.title}
                       </h3>
-                      <span className="px-3 py-1 rounded-full text-sm bg-gray-500/20 text-gray-300">
+                      <span className="px-4 py-1.5 bg-gray-500/20 text-gray-300 text-sm sm:text-base font-medium rounded-full">
                         {event.status}
                       </span>
                     </div>
-                    <p className="text-gray-300 mb-6">{event.description}</p>
+                    <p className="text-gray-300 text-base sm:text-lg leading-relaxed">{event.description}</p>
                     <div className="space-y-4">
-                      <div className="flex items-center gap-2 text-gray-400">
+                      <div className="flex items-center gap-3 text-gray-300 text-base sm:text-lg">
                         <span className="text-amber-400">📅</span>
                         {event.date}
                       </div>
                       <div className="flex flex-wrap gap-3">
                         {event.highlights.map((highlight, index) => (
-                          <span key={index} className="px-3 py-1 rounded-full bg-gray-800 text-gray-300 text-sm">
+                          <span key={index} className="px-3 py-1.5 bg-gray-800 text-gray-300 text-sm sm:text-base rounded-md">
                             {highlight}
                           </span>
                         ))}
