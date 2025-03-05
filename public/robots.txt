@@ -1,0 +1,65 @@
+# robots.txt for Sikkim Rising Star.com/
+# Date: March 5, 2025
+
+# Default rules for all crawlers
+User-agent: *
+Allow: /
+Disallow: /_next/           # Block Next.js build assets
+Disallow: /api/             # Block API routes (if present in source)
+Disallow: /private/         # Block hypothetical private/admin areas
+Disallow: /drafts/          # Block draft or unpublished content
+Disallow: /*?*              # Block URLs with query parameters (e.g., tracking)
+
+# Specific crawler rules
+User-agent: Googlebot
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Disallow: /private/
+Disallow: /drafts/
+Allow: *.js                # Allow JavaScript files for rendering
+Allow: *.css               # Allow CSS files for styling
+
+User-agent: Bingbot
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Disallow: /private/
+Disallow: /drafts/
+
+User-agent: Slurp         # Yahoo crawler
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Disallow: /private/
+Disallow: /drafts/
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Disallow: /private/
+Disallow: /drafts/
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Crawl delay for resource-heavy bots (optional)
+User-agent: Yandex
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Crawl-delay: 10          # Delay in seconds
+
+# Sitemap reference
+Sitemap: https://sikkimrisingstar.com/sitemap.xml
+
+# Host directive (optional, for older crawlers like Yandex)
+Host: https://sikkimrisingstar.com 
