@@ -6,8 +6,6 @@ export default function Hero() {
   className="relative min-h-[80vh] flex items-center justify-center mb-32 bg-cover bg-center"
   style={{ backgroundImage: "url('/images/hero.jpg')" }}
 >
-      {/* Overlay Gradient for Contrast */}
-      <div className="absolute inset-0 bg-black/40" />
 
       {/* Content Section */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
