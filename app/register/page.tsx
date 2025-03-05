@@ -58,7 +58,10 @@ export default function RegisterPage() {
                   <option value="">Select a category</option>
                   <option value="singing">Singing</option>
                   <option value="dancing">Dancing</option>
-                  <option value="music">Music</option>
+                  <option value="music">Rap</option>
+                  <option value="acting">Beatbox</option>
+                  <option value="comedy">Musical instruments</option>
+                  <option value="other">Open Talent</option>
                 </select>
               </div>
             </div>

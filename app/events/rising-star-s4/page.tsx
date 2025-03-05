@@ -3,10 +3,10 @@ import Card from '../../components/ui/Card';
 import Image from 'next/image';
 
 const eventDetails = {
-  title: "Sikkim Rising Star 2024",
-  date: "June - August 2024",
-  registrationDeadline: "May 31, 2024",
-  venue: "Manan Kendra, Gangtok",
+  title: "Sikkim Rising Star Season 4",
+  date: "Coming Soon",
+  registrationDeadline: "Coming Soon",
+  venue: "TO BE ANNOUNCED",
   description: "Be part of Sikkim's biggest talent hunt! Showcase your skills on a grand stage with international judges, live streaming, and unprecedented opportunities. Join us for an unforgettable journey of talent, creativity, and stardom.",
 };
 

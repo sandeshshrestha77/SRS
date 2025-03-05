@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 const navigation = {
@@ -6,14 +7,8 @@ const navigation = {
     { name: "About", href: "/about" },
     { name: "Events", href: "/events" },
     { name: "Register", href: "/register" },
-    { name: "Contact", href: "#contact" },
   ],
-  company: [
-    { name: "Success Stories", href: "#stories" },
-    { name: "Media Coverage", href: "#media" },
-    { name: "Press Kit", href: "#press" },
-    { name: "FAQs", href: "#faq" },
-  ],
+  
   legal: [
     { name: "Privacy Policy", href: "#" },
     { name: "Terms of Service", href: "#" },
@@ -34,13 +29,16 @@ export default function Footer() {
         <div className="py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Branding and Contact Info */}
           <div className="md:col-span-1">
-            <Link
-              href="/"
-              className="inline-block text-2xl font-display font-bold text-white mb-4"
-            >
-              Sikkim Rising Star
-            </Link>
-            <p className="text-gray-400 text-sm leading-relaxed mb-6">
+  <Link href="/" className="flex items-center space-x-2 group">
+    <Image
+      src="/logo.png" // Adjust this path based on your logo's location in public/
+      alt="Sikkim Rising Star Logo"
+      width={150}    // Set the desired width
+      height={40}    // Set the desired height
+      className="group-hover:brightness-125 transition-all duration-300"
+    />
+  </Link>
+  <p className="text-gray-400 text-sm leading-relaxed mb-6">
   Sikkim&apos;s Premier Talent Hunt Competition, discovering extraordinary talents since 2018.
 </p>
             <div className="space-y-2">

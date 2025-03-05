@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,13 +26,18 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20 items-center">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
-            <span className="text-2xl font-display font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent group-hover:from-amber-300 group-hover:to-amber-500 transition-all duration-300">
-              Sikkim Rising Star
-            </span>
-          </Link>
+<div className="flex justify-between h-20 items-center">
+
+  {/* Logo */}
+  <Link href="/" className="flex items-center space-x-2 group">
+  <Image
+    src="/logo.png" // Adjust this path based on your logo's location in public/
+    alt="Sikkim Rising Star Logo"
+    width={150}    // Set the desired width
+    height={40}    // Set the desired height
+    className="group-hover:brightness-125 transition-all duration-300"
+  />
+</Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
