@@ -17,7 +17,7 @@ export default function EventsPage() {
       description: "The biggest talent hunt competition yet, featuring international judges and live streaming.",
       link: "/events/rising-star-s4",
       image: "/images/s/4.jpg",
-      date: "June 30, 2025",
+      date: "coming soon",
       highlights: ["International Judges", "Live Streaming", "₹10L Prize Pool"]
     },
     {
