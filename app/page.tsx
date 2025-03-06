@@ -7,6 +7,7 @@ import Prizes from "./components/home/Prizes";
 import Sponsors from "./components/home/Sponsors";
 import FAQ from "./components/home/FAQ";
 import CTA from "./components/home/CTA";
+import { Analytics } from "@vercel/analytics/react"
 
 const Home = () => {
   return (
