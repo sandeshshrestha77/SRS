@@ -1,6 +1,40 @@
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import { useState } from 'react';
+import { supabase } from './supabaseClient'; // Adjust the import based on your project structure
 
 export default function RegisterPage() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    category: '',
+    experience: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const { name, email, phone, category, experience } = formData;
+
+    const { error } = await supabase.rpc('submit_registration', {
+      p_name: name,
+      p_email: email,
+      p_phone: phone,
+      p_category: category,
+      p_experience: experience,
+    });
+
+    if (error) {
+      console.error('Error submitting registration:', error);
+    } else {
+      console.log('Registration submitted successfully!');
+      // Optionally reset the form or show a success message
+    }
+  };
+
   return (
     <main className="min-h-screen py-24">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,7 +44,7 @@ export default function RegisterPage() {
         </div>
         
         <div className="card p-8">
-          <form className="space-y-8">
+          <form className="space-y-8" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -19,8 +53,11 @@ export default function RegisterPage() {
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   className="search-input"
                   required
+                  value={formData.name}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -31,8 +68,11 @@ export default function RegisterPage() {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   className="search-input"
                   required
+                  value={formData.email}
+                  onChange={handleChange}
                 />
               </div>
             </div>
@@ -45,8 +85,11 @@ export default function RegisterPage() {
                 <input
                   type="tel"
                   id="phone"
+                  name="phone"
                   className="search-input"
                   required
+                  value={formData.phone}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -54,7 +97,14 @@ export default function RegisterPage() {
                 <label htmlFor="category" className="block text-sm font-medium text-gray-300 mb-2">
                   Category
                 </label>
-                <select id="category" className="search-input" required>
+                <select
+                  id="category"
+                  name="category"
+                  className="search-input"
+                  required
+                  value={formData.category}
+                  onChange={handleChange}
+                >
                   <option value="">Select a category</option>
                   <option value="singing">Singing</option>
                   <option value="dancing">Dancing</option>
@@ -72,9 +122,12 @@ export default function RegisterPage() {
               </label>
               <textarea
                 id="experience"
+                name="experience"
                 rows={4}
                 className="search-input"
                 placeholder="Tell us about your journey in performing arts..."
+                value={formData.experience}
+                onChange={handleChange}
               />
             </div>
 
