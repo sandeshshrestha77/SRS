@@ -24,7 +24,7 @@ const categories = [
     questions: [
       {
         question: "Who can participate?",
-        answer: "Anyone between the ages of 16-35 residing in Sikkim can participate. We welcome participants across all categories - singing, dancing, and music. While prior experience is valuable, we emphasize raw talent and potential."
+        answer: "Anyone with a talent in singing, dancing, acting, comedy, or any unique performing art can participate! There is no age limit. Whether you're a solo performer or part of a group, if you’ve got the passion and talent, this stage is for you. Participants must be available for all rounds of the competition from May to September.nyone between the ages of 16-35 residing in Sikkim can participate. We welcome participants across all categories - singing, dancing, and music. While prior experience is valuable, we emphasize raw talent and potential."
       },
       {
         question: "What are the participation categories?",
@@ -41,7 +41,7 @@ const categories = [
       },
       {
         question: "What are the prizes and rewards?",
-        answer: "Winners receive substantial cash prizes (total pool of ₹10 lakhs), professional contracts, mentorship opportunities, and exposure through our media partners. Additional benefits include recording sessions, portfolio development, and performance opportunities."
+        answer: "Sikkim Rising Star Season 4 offers exciting rewards: ₹1,00,000 for the winner, ₹40,000 for the first runner-up, and ₹20,000 for the second runner-up — all with trophies and certificates. Finalists also receive media exposure and performance opportunities.Winners receive substantial cash prizes (total pool of ₹10 lakhs), professional contracts, mentorship opportunities, and exposure through our media partners. Additional benefits include recording sessions, portfolio development, and performance opportunities."
       }
     ]
   }

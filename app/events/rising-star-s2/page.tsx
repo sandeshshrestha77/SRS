@@ -21,21 +21,21 @@ performances, winning over the hearts of our audience.`,
       name: "Dynamic Flicker",
       category: "Dancing",
       prize: "₹80,000",
-      image: "https://images.unsplash.com/photo-1564460576398-ef55d99548b2?auto=format&fit=crop&q=80&w=256&h=256"
+      image: "/images/s2/w1.png"
     },
     {
       position: "1st Runner Up",
       name: "Ugen Bhutia",
       category: "Singing",
       prize: "₹40,000",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=256&h=256"
+      image: "/images/s2/w2.png"
     },
     {
       position: "2nd Runner Up",
       name: "Rohit Rai",
       category: "Dancing",
       prize: "₹20,000",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=256&h=256"
+      image: "/images/s2/w3.png"
     }
   ],
   highlights: [

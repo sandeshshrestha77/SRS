@@ -21,21 +21,21 @@ charisma on stage.`,
       name: "The Dream band",
       category: "Singing",
       prize: "₹1,00,000",
-      image: "https://images.unsplash.com/photo-1564460576398-ef55d99548b2?auto=format&fit=crop&q=80&w=256&h=256"
+      image: "/images/s3/w1.png"
     },
     {
       position: "1st Runner Up",
       name: "Sidhant Lama",
       category: "Mimicry",
       prize: "₹50,000",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=256&h=256"
+      image: "/images/s3/w2.png"
     },
     {
       position: "2nd Runner Up",
       name: "Avinash Khati",
       category: "Singing",
       prize: "₹30,000",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=256&h=256"
+      image: "/images/s3/w3.png"
     }
   ],
   highlights: [
